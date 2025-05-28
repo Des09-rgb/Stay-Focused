@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css2?family=Hackers&display=swap" rel="stylesheet">
+<h1>Stay Focused</h1>
+<div class="container">
+    <div class="todo-section">
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Nuova attività" />
+            <button onclick="aggiungiTask()">Aggiungi</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <div class="calendar-section">
+        <h2>Calendario</h2>
+        <div class="month-navigation">
+            <button onclick="changeMonth(-1)">← Mese Precedente</button>
+            <span id="meseAnno"></span>
+            <button onclick="changeMonth(1)">Mese Successivo →</button>
+        </div>
+        <div id="calendar"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<h6>created by: Bramato Desiree IIIB INF</h6>
+</body>
+</html>
